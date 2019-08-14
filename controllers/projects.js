@@ -38,7 +38,7 @@ router.get('/new', function(req, res) {
 
 // GET /projects/:id - display a specific project
 router.get('/:id', function(req, res) {
-  db.project.find({
+  db.project.findOne({
     where: { id: req.params.id },
     include: [db.category]
   })
