@@ -28,7 +28,7 @@ app.get('*', (req, res) => {
   res.render('main/404')
 })
 
-let server = app.listen(process.env.PORT || 3000, function() {
+let server = app.listen(process.env.PORT || 3006, function() {
   rowdy.print()
 })
 
